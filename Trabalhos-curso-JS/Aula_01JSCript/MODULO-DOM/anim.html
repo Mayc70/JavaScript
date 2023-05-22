@@ -1,0 +1,93 @@
+<html>
+
+<body>
+    <style>
+        /*
+        .box {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            margin-left: 0;
+        }
+
+        .animEsquerda {
+            transition: 1s;
+            margin-left: 450px;
+            margin-top: 300px;
+            background-color: blue;
+        }
+
+        .animDireita {
+            transition: 2s;
+            margin-right: 300px;
+            margin-top: 100px;
+            background-color: green;
+        }
+        */
+        .conteudo h2 span {
+            font-size: 13px;
+            cursor: pointer;
+
+        }
+
+        .conteudo p {
+            overflow: hidden;
+            height: 0px;
+            transition: 1s;
+        }
+
+        .mostrar {
+            height: 200px !important;
+        }
+    </style>
+    <!--div class="box"></div-->
+    <div class="conteudo">
+        <h2>Titulo do contéudo <span>Ver mais!</span></h2>
+        <p>Inteligência artificial (IA) é um ramo da ciência da computação
+            que se concentra no desenvolvimento de sistemas capazes de realizar
+            tarefas que antes eram exclusivas de seres humanos, como perceber,
+            raciocinar e tomar decisões. A IA está presente em diversas tecnologias,
+            desde assistentes virtuais em dispositivos móveis até carros autônomos e
+            diagnósticos médicos mais precisos. Embora ainda existam desafios a serem
+            superados, a IA tem o potencial de revolucionar muitos aspectos da vida moderna,
+            tornando-os mais eficientes e acessíveis a todos.</p>
+    </div>
+    <script>
+        /*
+        var box = document.querySelectorAll('.box')[0];
+
+        setTimeout(() => {
+            box.classList.add('animEsquerda');
+        }, 1000);
+
+        setTimeout(() => {
+            box.classList.add('animDireita');
+        }, 2000);
+        /*
+        box.addEventListener('click', () => {
+            box.classList.add('animEsquerda');
+        })
+        */
+
+        var span = document.querySelector('.conteudo span')
+
+        span.addEventListener('click', function () {
+            var conteudo = document.querySelector('.conteudo p');
+
+            if (conteudo.classList.contains('mostrar')) {
+                span.innerHTML = 'Ver mais!';
+                conteudo.classList.remove('mostrar');
+            } else {
+                span.innerHTML = 'Ocultar!';
+                conteudo.classList.add('mostrar');
+
+            }
+
+        });
+
+
+
+    </script>
+</body>
+
+</html>

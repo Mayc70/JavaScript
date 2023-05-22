@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1679354286 source:c:\users\odair\desktop\aula_logicac\main.c
+	<stdio.h>
+	<stdlib.h>
+

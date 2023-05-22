@@ -1,0 +1,40 @@
+<html>
+
+<body>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+
+    <script>
+        /*
+        var el = document.getElementById('box');
+        el.style.width = 100;
+        el.style.height = 100;
+        el.style.backgroundColor = 'blue';
+        el.style.marginLeft = 100;
+        */
+
+        var elementos = document.getElementsByClassName('box');
+
+        for (var i = 0; i < elementos.lengt; i++) {
+            var el = elementos[i];
+
+            el.style.width = 100;
+            el.style.height = 100;
+            el.style.backgroundColor = 'blue';
+            el.style.marginLeft = 100;
+            el.style.marginTop = 10;
+            el.style.borderWidth = 1;
+            el.style.borderColor = 'red';
+            el.style.borderStyle = 'dotted';
+        }
+
+    </script>
+</body>
+
+</html>
